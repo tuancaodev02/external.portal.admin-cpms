@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
     "antd": "^5.20.6",
     "classnames": "^2.5.1",
     "dayjs": "^1.11.13",

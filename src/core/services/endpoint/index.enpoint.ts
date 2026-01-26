@@ -149,4 +149,10 @@ export const API_DOCUMENT: { [key: string]: { [key: string]: IDefineApiDocument 
             method: 'POST',
         },
     },
+    scriptExecution: {
+        execute: {
+            endpoint: '/script/execute',
+            method: 'POST',
+        },
+    },
 };

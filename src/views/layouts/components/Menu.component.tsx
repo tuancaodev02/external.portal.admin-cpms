@@ -18,7 +18,6 @@ function MenuComponent() {
         router.push(path);
     };
     const pathname = usePathname();
-    console.log('pathname', pathname);
 
     const items = [
         {
@@ -62,6 +61,12 @@ function MenuComponent() {
             icon: <FileSearchOutlined />,
             label: 'Tin tức',
             onClick: () => handleRedirect('/news'),
+        },
+        {
+            key: 'script-execution',
+            icon: <FileSearchOutlined />,
+            label: 'Thực thi script',
+            onClick: () => handleRedirect('/script-execution'),
         },
     ];
 
