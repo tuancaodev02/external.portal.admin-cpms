@@ -1,5 +1,6 @@
 'use client';
 import {
+    BarChartOutlined,
     BlockOutlined,
     FileSearchOutlined,
     FileZipOutlined,
@@ -67,6 +68,12 @@ function MenuComponent() {
             icon: <FileSearchOutlined />,
             label: 'Thực thi script',
             onClick: () => handleRedirect('/script-execution'),
+        },
+        {
+            key: 'reports',
+            icon: <BarChartOutlined />,
+            label: 'Báo cáo',
+            onClick: () => handleRedirect('/reports'),
         },
     ];
 
