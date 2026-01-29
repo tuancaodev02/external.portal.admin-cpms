@@ -1,11 +1,10 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
-import { EnumUserCourseStatus, FormatDate } from '@/core/constants/common.constant';
+import { EnumUserCourseStatus } from '@/core/constants/common.constant';
 import { ApiResponse } from '@/core/interfaces/common.interface';
 import { IUserEntity } from '@/core/services/models/user.model';
 import { UserService } from '@/core/services/user.service';
-import { TimezoneUtil } from '@/core/utils/timezone.util';
 import { ExclamationCircleFilled } from '@ant-design/icons';
 import { Button, Col, DatePicker, Form, Input, Modal, Row, Space, Spin, Table, Tag, message } from 'antd';
 import { ColumnType } from 'antd/es/table';
@@ -167,7 +166,7 @@ function StudentDetail() {
             name: values.name?.trim(),
             email: values.email?.trim(),
             phone: values.phone?.trim(),
-            birthday: TimezoneUtil.parseCurrentTimezone(values.birthday, FormatDate.UTC_DATE_TIME),
+            birthday: values.birthday,
             address: values.address?.trim(),
         };
     };

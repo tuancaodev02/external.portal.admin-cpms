@@ -22,7 +22,7 @@ export class TimezoneUtil {
     }
 
     public static parseCurrentTimezone(date: string | Dayjs, format?: FormatDate) {
-        return dayjs(date).tz(this.timezone).format(format);
+        return dayjs(date).utc().format(format);
     }
 
     public static formatDate(date: Dayjs) {

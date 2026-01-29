@@ -219,6 +219,7 @@ function CourseDetail() {
                                         style={{ width: '100%' }}
                                         placeholder={['Ngày bắt đầu', 'Ngày kết thúc']}
                                         disabled={!editMode}
+                                        format={FormatDate.CLIENT_DATE}
                                     />
                                 </Form.Item>
                             </Col>
