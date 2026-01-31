@@ -29,7 +29,7 @@ export const ReportsComponent = () => {
                     >
                         <iframe
                             title="Power BI Dashboard - QLLT"
-                            src="https://app.powerbi.com/reportEmbed?reportId=5e9ccf16-2cf7-4c3c-8ef4-84163697c72f&autoAuth=true&ctid=2dff09ac-2b3b-4182-9953-2b548e0d0b39&filterPaneEnabled=false&navContentPaneEnabled=false"
+                            src="https://app.powerbi.com/reportEmbed?reportId=84167e2d-5e14-4ccf-ab2a-1803cb3a40a4&autoAuth=true&ctid=2dff09ac-2b3b-4182-9953-2b548e0d0b39"
                             width="100%"
                             height="100%"
                             frameBorder="0"
